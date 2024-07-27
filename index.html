@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encriptador de Texto</h1>
+        <textarea id="inputText" placeholder="Ingresa el texto aquí"></textarea>
+        <div class="options">
+            <label for="algorithm">Algoritmo:</label>
+            <select id="algorithm">
+                <option value="btoa">Base64</option>
+                <option value="custom">Personalizado</option>
+            </select>
+            <label for="length">Longitud:</label>
+            <input type="number" id="length" min="1" value="5">
+        </div>
+        <button id="encryptButton">Encriptar</button>
+        <button id="decryptButton">Desencriptar</button>
+        <textarea id="outputText" placeholder="Resultado" readonly></textarea>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
